@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <script>
+    // TASK-1
+    var studentName = "Naveen";
+    let studentAge = 22;
+    const collegeName = "ABC College";
+
+    console.log(studentName);
+    console.log(studentAge);
+    console.log(collegeName);
+
+
+    studentName = "Kumar";
+    console.log(studentName);
+
+
+    studentAge = 23;
+    console.log(studentAge);
+
+
+
+    var studentName = "Arun";
+    console.log(studentName);
+
+
+    //  TASK-2
+    let name = prompt("Enter your name:");
+    let age = prompt("Enter your age:");
+    let city = prompt("Enter your city:");
+
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("City:", city);
+
+
+
+    // TASK-3
+    let paeru = prompt("Enter your name:");
+    alert("Welcome " + paeru + "!");
+
+
+
+    // TASK-4
+    let birthDate = prompt("Enter your birth year:");
+    let currentYear = 2026;
+    let age = currentYear - birthDate;
+    console.log("Birth Year:", birthDate);
+    console.log("Age:", age);
+
+
+
+    //Task-5
+    let task1 = "Hello";
+    let task2 = 100;
+    let task3 = 25.5;
+    let task4 = true;
+    let task5 = false;
+    let task6 = undefined;
+    let task7 = null;
+
+    console.log(task1, typeof task1);
+    console.log(task2, typeof task2);
+    console.log(task3, typeof task3);
+    console.log(task4, typeof task4);
+    console.log(task5, typeof task5);
+    console.log(task6, typeof task6);
+    console.log(task7, typeof task7);
+
+
+
+    // Task-6
+    let student = {
+      name: "Naveen",
+      age: 22,
+      city: "Trichy",
+      qualification: "BCA",
+      isStudent: true
+    };
+    console.log(student);
+    console.log(student.name);
+    console.log(student.age);
+    console.log(student.qualification);
+    console.log(student.isStudent);
+
+
+
+    // Task-7
+    let fruits = ["Apple", "Mango", "Orange", "Banana", "Grapes", "Papaya"];
+    console.log("First fruit:", fruits[0]);
+    console.log("Second fruit:", fruits[1]);
+    console.log("Last fruit:", fruits[fruits.length - 1]);
+    console.log("Total fruits:", fruits.length);
+
+
+
+    // Task-8
+    let a = 20;
+    let b = 5;
+    console.log("Addition:", a + b);
+    console.log("Subtraction:", a - b);
+    console.log("Multiplication:", a * b);
+    console.log("Division:", a / b);
+    console.log("Modulus:", a % b);
+    console.log("Exponentiation:", a ** b);
+
+
+
+    //TASK-9
+    let shirt = 999;
+    let pant = 1499;
+    let shoes = 1999;
+
+    let total = shirt + pant + shoes;
+
+    console.log("Total:", total);
+
+
+
+    // TASK-10
+    let tamil = 80;
+    let english = 75;
+    let maths = 90;
+
+    let total = tamil + english + maths;
+    let average = total / 3;
+
+    console.log("Total Marks:", total);
+    console.log("Average Marks:", average);
+
+
+
+    //TASK-11
+    let a = 10;
+
+    let b = a++;
+
+    console.log(a);
+    console.log(b);
+
+
+
+    //TASK-12
+    let a = 10;
+
+    let b = ++a;
+
+    console.log(a);
+    console.log(b);
+
+
+
+    //Task-13
+    let a = 20;
+
+    let b = a--;
+
+    console.log(a);
+    console.log(b);
+
+
+
+    //TASK-14
+    let a = 20;
+
+    let b = --a;
+
+    console.log(a);
+    console.log(b);
+    TASK - 15
+    let a = 5;
+    let b = a++;
+    let c = ++a;
+    let d = b--;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+
+
+
+    //TASK-16
+    let num = 10;
+
+    num += 5;
+    console.log("After += :", num);
+
+    num = 10;
+
+    num -= 5;
+    console.log("After -= :", num);
+
+    num = 10;
+
+    num *= 5;
+    console.log("After *= :", num);
+
+    num = 10;
+
+    num /= 5;
+    console.log("After /= :", num);
+
+    num = 10;
+
+    num %= 5;
+    console.log("After %= :", num);
+
+    num = 10;
+
+    num **= 5;
+    console.log("After **= :", num);
+
+
+
+    //TASK-17
+    let name = "Balaji";
+    let age = 22;
+    let city = "Chennai";
+    let college = "Karpagam College";
+
+    let subjects = [
+      "PLC",
+      "Power Electronics",
+      "Microprocessor",
+      "Digital logic circuit",
+      "Smart System"
+    ];
+
+    let student = {
+      name: name,
+      age: age,
+      city: city,
+      subjects: subjects,
+      isStudent: true
+    };
+
+    console.log("Student Name:", student.name);
+    console.log("Student Age:", student.age);
+    console.log("City:", student.city);
+    console.log("First Subject:", student.subjects[0]);
+    console.log("Last Subject:", student.subjects[student.subjects.length - 1]);
+    console.log("Total Subjects:", student.subjects.length);
+    console.log("Complete Object:", student);
+
+
+
+
+    //FINAL CHALLENGE
+    let number1 = prompt("Enter first number:");
+    let number2 = prompt("Enter second number:");
+
+    let addition = number1 + number2;
+    let subtraction = number1 - number2;
+    let multiplication = number1 * number2;
+    let division = number1 / number2;
+    let modulus = number1 % number2;
+    let power = number1 ** number2;
+
+    console.log("Addition:", addition);
+    console.log("Subtraction:", subtraction);
+    console.log("Multiplication:", multiplication);
+    console.log("Division:", division);
+    console.log("Modulus:", modulus);
+    console.log("Power:", power);
+
+
+  </script>
+</body>
+
+</html>
