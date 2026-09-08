@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  *VAR   ====== Function-scoped and can be redeclared and reassigned
+        //  *LET   ====== Block-scoped and can be reassigned, but cannot be redeclared in the same scope
+        //  *CONST ======  Block-scoped and cannot be reassigned or redeclared
+
+        var a = 10;
+        a = 20;
+
+        let b = 10;
+        b = 20;
+
+        const c = 10;
+        c = 20;
+
+
+        //Task - 2
+
+        //Let will be re - declare
+        var x = 10;
+        var x = 20;
+
+        //let and const cannot be declare
+        let y = 10;
+        let y = 20;
+
+        const z = 10;
+        const z = 20;
+
+
+
+        //Task-3
+
+        var x = 5;
+        let y = 10;
+        const z = 15;
+
+        x = 20;
+        y = 25;
+        z = 30;
+        //ANSWER===ERROR
+
+        //TASK=4
+        // Declaration is a Creating a variable without assigning a value.
+        //Initialization is Giving a variable its first value.
+
+
+
+        //TASK=5
+        let a;
+        console.log(a);
+        ANSWER = undefine
+
+
+
+        //TASK=6
+        // Hoisting is a JavaScript processes certain declarations before executing the code.
+        eg = console.log(x);
+
+        var x = 10; output = undefine
+
+            //TAsk=7
+            ===> NULL
+            * Intentional empty value
+                * Usually assigned by the programmer
+
+                    ====> undefine
+                        * Value has not been assigned
+                            * Usually occurs automatically
+
+        //TASK=8
+        console.log(typeof null);
+        console.log(typeof undefined);
+        console.log(typeof []);
+        console.log(typeof {});
+
+
+        Output: object
+        undefined
+        object
+        object
+
+        //TASK=9
+        //===> Compares values after type conversion.
+        //===> Compares both value and data type.
+
+        console.log(5 == "5"); output = true
+        console.log(5 === "5"); output = false
+
+
+        //TASK=10
+        ++i ====> Pre - increment= increases first, then uses the value
+        Eg = let i = 5;
+        console.log(++i); // 6
+
+
+        i++ ====> Post - increment= uses the value first, then increases it
+
+
+        EG = let j = 5;
+
+        console.log(j++); // 5
+        console.log(j);   // 6
+
+        //TASK=11
+        let x = 10;
+        let y = "5";
+
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(x / y);
+
+        output = 105
+        5
+        50
+        2
+
+        //TASK=12
+        AND ===&&
+            OR ===||
+            NOT=!
+
+                //TASK - 13
+                console.log(5 > 3 && 10 > 5);
+        console.log(5 > 10 || 10 > 5);
+        console.log(!(5 > 3));
+
+        Output:
+        console.log(5 > 3 && 10 > 5);
+        console.log(5 > 10 || 10 > 5);
+        console.log(!(5 > 3));
+
+       //TASK=14
+       The ternary operator is a short way to write an if-else
+            let age = 20;
+
+        let result = age >= 18 ? "Adult" : "Minor";
+
+        console.log(result); output = Adult
+
+        //TASK=15
+        Implicit: JavaScript automatically converts the data type
+        Eg = let x = "10";
+        let y = 5;
+        console.log(x - y);    //output= 5
+
+        Explicit: Programmer manually converts the type
+        let x = "10";
+
+        console.log(Number(x));   //output 10
+
+        //TASK=16
+        console.log(Number("123"));
+        console.log(Number("hello"));
+        console.log(Number(true));
+        console.log(Number(false));
+        console.log(Boolean(0));
+        console.log(Boolean("hello"));
+
+        //output=123
+        NaN
+        1
+        0
+        false
+        true
+
+
+       //TASK=17
+       //NaN is a Not a Number
+        let x = Number("hello");
+
+        console.log(x);
+
+        //TASK=18
+        //if-else is useful for conditions and ranges
+        if (age >= 18) {
+            console.log("Adult");
+        } else {
+            console.log("Minor");
+        }
+        //switch is useful when comparing one value against multiple specific cases
+        let day = 1;
+
+        switch (day) {
+            case 1:
+                console.log("Monday");
+                break;
+
+            case 2:
+                console.log("Tuesday");
+                break;
+        }
+
+        //TASK=19
+        let age = 20;
+
+        if (age >= 18) {
+            console.log("Adult");
+        } else {
+            console.log("Minor");
+        }   //output=Adult
+
+
+        //TASK=20
+        //An if statement inside another if statement is called a nested if
+        let age = 20;
+        let hasID = true;
+
+        if (age >= 18) {
+            if (hasID) {
+                console.log("Entry allowed");
+            }
+        }    //output=Entry allowed
+
+        //Task=21
+        let num = 10;
+
+        let result = num % 2 === 0 ? "Even" : "Odd";
+
+        console.log(result);
+
+        //TASK=22
+        //while checks the condition before executing
+        let i = 1;
+
+        while (i <= 5) {
+            console.log(i);
+            i++;
+        }
+        //do-while executes the code at least once, then checks the condition
+        let i = 1;
+
+        do {
+            console.log(i);
+            i++;
+        } while (i <= 5);
+
+        //TASK = 23
+        for (let i = 1; i <= 5; i++) {
+            console.log(i);
+        }
+        //output=1
+        2
+        3
+        4
+        5
+
+
+        //TASK=24
+        for-of ===> Gets values
+        let arr = [10, 20, 30];
+
+        for (let value of arr) {
+            console.log(value);
+        } output = 10 20 30
+
+        for-in → Gets keys / indexes
+        let arr = [10, 20, 30];
+
+        for (let index in arr) {
+            console.log(index);
+        }  //output=0 1 2 
+
+        //TASK=25
+        let sum = 0;
+
+        for (let i = 1; i <= 100; i++) {
+            sum = sum + i;
+        }
+
+        console.log(sum);   //output=5050
+
+
+
+        //TASK=26
+        slice() ==> Creates a portion of an array without changing the original array
+
+
+        let arr = [1, 2, 3, 4];
+
+        let result = arr.slice(1, 3);
+
+        console.log(result); // [2, 3]
+        console.log(arr);    // [1, 2, 3, 4]
+
+        splice() → Changes the original array by adding / removing elements
+
+        let arr = [1, 2, 3, 4];
+
+        arr.splice(1, 2);
+
+        console.log(arr);  //output=[1,4]
+
+
+        //TASK=27
+        let arr = [1, 2, 3];
+
+        arr.push(4);
+        arr.pop();
+        arr.unshift(0);
+        arr.shift();
+
+        console.log(arr);
+        //output=[1, 2, 3]
+        push(4)    →[1, 2, 3, 4]
+        pop()      →[1, 2, 3]
+        unshift(0) →[0, 1, 2, 3]
+        shift()    →[1, 2, 3]
+
+
+
+            //TASK=28
+            * Function Declaration:
+        function add(a, b) {
+            return a + b;
+        }
+        * Function Expression:
+        let add = function (a, b) {
+            return a + b;
+        };
+
+
+        //TASK=29   
+        //An arrow function is a shorter syntax for writing a function
+        //Normal function:
+        Eg = function add(a, b) {
+            return a + b;
+        }
+        //Arrow function
+        const add = (a, b) => {
+            return a + b;
+        };
+        //Short form
+        const add = (a, b) => a + b;
+
+        //TASK=30
+        function greet() {
+            return "Hello";
+        }
+
+        let message = greet();
+
+        console.log(message);  //output==Hello
+
+
+
+    </script>
+</body>
+
+</html>
